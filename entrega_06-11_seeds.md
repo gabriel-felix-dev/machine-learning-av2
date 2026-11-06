@@ -4,7 +4,7 @@
 
 **Tema:** classificação de variedades de trigo por características geométricas dos grãos  
 **Dataset:** Seeds  
-**Integrante(s):** Gabriel Felix
+**Integrante(s):** Gabriel Felix Pinto - 03356520, David Ryan - 03354657
 
 ## T1 — Escolha e coleta do dataset
 
