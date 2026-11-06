@@ -1,0 +1,23 @@
+{
+  "metrica_escolha": "F1 macro médio em CV no treino",
+  "parametros": {
+    "arvore__ccp_alpha": 0.01,
+    "arvore__max_depth": 5,
+    "arvore__min_samples_leaf": 1,
+    "selecao__k": "all"
+  },
+  "atributos": [
+    "area",
+    "perimetro",
+    "compacidade",
+    "comprimento",
+    "largura",
+    "assimetria",
+    "sulco"
+  ],
+  "profundidade_observada": 5,
+  "folhas": 8,
+  "configuracoes": 240,
+  "random_state": 42,
+  "teste_usado_para_escolher": false
+}

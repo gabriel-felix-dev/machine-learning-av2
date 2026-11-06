@@ -1,0 +1,523 @@
+{
+  "data_execucao": "2026-11-06T01:44:17.187990-03:00",
+  "data_academica_referencia": "2026-11-06",
+  "python": "3.12.14",
+  "versoes": {
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "auditoria": {
+    "sha256_antes": "1f3f83c0d8485ae9148061389d19628607e3f5660e3d6f40ec9102fb398bb12f",
+    "linhas": 210,
+    "colunas_originais": 8,
+    "ausentes": 0,
+    "duplicatas_linhas": 0,
+    "duplicatas_X": 0,
+    "tipos": {
+      "area": "float64",
+      "perimetro": "float64",
+      "compacidade": "float64",
+      "comprimento": "float64",
+      "largura": "float64",
+      "assimetria": "float64",
+      "sulco": "float64",
+      "classe": "int64"
+    },
+    "classes": {
+      "1": 70,
+      "2": 70,
+      "3": 70
+    },
+    "medidas_nao_positivas": 0,
+    "compacidade_residuo_maximo": 0.0010199686358989268,
+    "alteracoes": "Apenas separação dos campos, nomes e tipos. Nenhum valor corrigido ou registro excluído.",
+    "sha256_depois": "1f3f83c0d8485ae9148061389d19628607e3f5660e3d6f40ec9102fb398bb12f"
+  },
+  "eda_treino": {
+    "extremos_iqr_por_atributo": {
+      "area": 0,
+      "perimetro": 0,
+      "compacidade": 4,
+      "comprimento": 0,
+      "largura": 0,
+      "assimetria": 2,
+      "sulco": 0
+    },
+    "graos_com_extremo_iqr": 6,
+    "correlacao_area_perimetro": 0.9945234479291633,
+    "medias_por_classe": {
+      "area": {
+        "1": 14.434285714285716,
+        "2": 18.361607142857142,
+        "3": 11.869285714285713
+      },
+      "perimetro": {
+        "1": 14.343392857142858,
+        "2": 16.140535714285715,
+        "3": 13.239464285714286
+      },
+      "compacidade": {
+        "1": 0.88055,
+        "2": 0.8842642857142857,
+        "3": 0.8501232142857144
+      },
+      "comprimento": {
+        "1": 5.523160714285714,
+        "2": 6.146767857142857,
+        "3": 5.222785714285714
+      },
+      "largura": {
+        "1": 3.260142857142857,
+        "2": 3.681446428571429,
+        "3": 2.857178571428572
+      },
+      "assimetria": {
+        "1": 2.583325,
+        "2": 3.6592857142857143,
+        "3": 4.818892857142857
+      },
+      "sulco": {
+        "1": 5.0997321428571425,
+        "2": 6.024089285714285,
+        "3": 5.098732142857143
+      }
+    }
+  },
+  "divisao": {
+    "treino": 168,
+    "teste": 42,
+    "semente": 42,
+    "por_classe_treino": {
+      "1": 56,
+      "2": 56,
+      "3": 56
+    },
+    "por_classe_teste": {
+      "1": 14,
+      "2": 14,
+      "3": 14
+    }
+  },
+  "candidatos_k3": [
+    "area",
+    "perimetro",
+    "largura"
+  ],
+  "modelo_final": {
+    "metrica_escolha": "F1 macro médio em CV no treino",
+    "parametros": {
+      "arvore__ccp_alpha": 0.01,
+      "arvore__max_depth": 5,
+      "arvore__min_samples_leaf": 1,
+      "selecao__k": "all"
+    },
+    "atributos": [
+      "area",
+      "perimetro",
+      "compacidade",
+      "comprimento",
+      "largura",
+      "assimetria",
+      "sulco"
+    ],
+    "profundidade_observada": 5,
+    "folhas": 8,
+    "configuracoes": 240,
+    "random_state": 42,
+    "teste_usado_para_escolher": false
+  },
+  "validacao": [
+    {
+      "modelo": "referencia",
+      "acuracia_cv_media": 0.32745098039215687,
+      "acuracia_cv_dp": 0.004802921064280724,
+      "f1_macro_cv_media": 0.16444444444444442,
+      "f1_macro_cv_dp": 0.0018144368465060603,
+      "acuracia_treino_cv": 0.33482587064676617
+    },
+    {
+      "modelo": "arvore_7",
+      "acuracia_cv_media": 0.8985739750445634,
+      "acuracia_cv_dp": 0.040821131929530026,
+      "f1_macro_cv_media": 0.8984372327392924,
+      "f1_macro_cv_dp": 0.04057732965715073,
+      "acuracia_treino_cv": 1.0
+    },
+    {
+      "modelo": "arvore_k3",
+      "acuracia_cv_media": 0.8333333333333334,
+      "acuracia_cv_dp": 0.04822727008366733,
+      "f1_macro_cv_media": 0.8340228370663153,
+      "f1_macro_cv_dp": 0.04878714247641655,
+      "acuracia_treino_cv": 1.0
+    },
+    {
+      "modelo": "arvore_refinada",
+      "acuracia_cv_media": 0.9226381461675579,
+      "acuracia_cv_dp": 0.052523908216047945,
+      "f1_macro_cv_media": 0.923131940523245,
+      "f1_macro_cv_dp": 0.052678728644963854,
+      "acuracia_treino_cv": 0.9866003316749585
+    }
+  ],
+  "teste": [
+    {
+      "modelo": "referencia",
+      "acuracia_treino": 0.3333333333333333,
+      "acuracia_teste": 0.3333333333333333,
+      "f1_macro_teste": 0.16666666666666666,
+      "acertos": 14,
+      "erros": 28
+    },
+    {
+      "modelo": "arvore_7",
+      "acuracia_treino": 1.0,
+      "acuracia_teste": 0.8809523809523809,
+      "f1_macro_teste": 0.8766283524904215,
+      "acertos": 37,
+      "erros": 5
+    },
+    {
+      "modelo": "arvore_k3",
+      "acuracia_treino": 1.0,
+      "acuracia_teste": 0.8333333333333334,
+      "f1_macro_teste": 0.8225650615552439,
+      "acertos": 35,
+      "erros": 7
+    },
+    {
+      "modelo": "arvore_refinada",
+      "acuracia_treino": 0.9880952380952381,
+      "acuracia_teste": 0.9285714285714286,
+      "f1_macro_teste": 0.9262835249042146,
+      "acertos": 39,
+      "erros": 3
+    }
+  ],
+  "metricas_por_classe": {
+    "referencia": {
+      "Kama": {
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1-score": 0.5,
+        "support": 14.0
+      },
+      "Rosa": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 14.0
+      },
+      "Canadian": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 14.0
+      },
+      "accuracy": 0.3333333333333333,
+      "macro avg": {
+        "precision": 0.1111111111111111,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.16666666666666666,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.11111111111111109,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.16666666666666666,
+        "support": 42.0
+      }
+    },
+    "arvore_7": {
+      "Kama": {
+        "precision": 0.9090909090909091,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.8,
+        "support": 14.0
+      },
+      "Rosa": {
+        "precision": 0.8666666666666667,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.896551724137931,
+        "support": 14.0
+      },
+      "Canadian": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1-score": 0.9333333333333333,
+        "support": 14.0
+      },
+      "accuracy": 0.8809523809523809,
+      "macro avg": {
+        "precision": 0.8835858585858586,
+        "recall": 0.8809523809523809,
+        "f1-score": 0.8766283524904215,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.8835858585858586,
+        "recall": 0.8809523809523809,
+        "f1-score": 0.8766283524904214,
+        "support": 42.0
+      }
+    },
+    "arvore_k3": {
+      "Kama": {
+        "precision": 0.8888888888888888,
+        "recall": 0.5714285714285714,
+        "f1-score": 0.6956521739130435,
+        "support": 14.0
+      },
+      "Rosa": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1-score": 0.9333333333333333,
+        "support": 14.0
+      },
+      "Canadian": {
+        "precision": 0.7647058823529411,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.8387096774193549,
+        "support": 14.0
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.8428649237472766,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8225650615552439,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.8428649237472766,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.822565061555244,
+        "support": 42.0
+      }
+    },
+    "arvore_refinada": {
+      "Kama": {
+        "precision": 1.0,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.88,
+        "support": 14.0
+      },
+      "Rosa": {
+        "precision": 0.9333333333333333,
+        "recall": 1.0,
+        "f1-score": 0.9655172413793104,
+        "support": 14.0
+      },
+      "Canadian": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1-score": 0.9333333333333333,
+        "support": 14.0
+      },
+      "accuracy": 0.9285714285714286,
+      "macro avg": {
+        "precision": 0.9361111111111112,
+        "recall": 0.9285714285714285,
+        "f1-score": 0.9262835249042146,
+        "support": 42.0
+      },
+      "weighted avg": {
+        "precision": 0.936111111111111,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.9262835249042146,
+        "support": 42.0
+      }
+    }
+  },
+  "matrizes_confusao": {
+    "referencia": [
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0
+      ]
+    ],
+    "arvore_7": [
+      [
+        10,
+        2,
+        2
+      ],
+      [
+        1,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        14
+      ]
+    ],
+    "arvore_k3": [
+      [
+        8,
+        2,
+        4
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        1,
+        0,
+        13
+      ]
+    ],
+    "arvore_refinada": [
+      [
+        11,
+        1,
+        2
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        14
+      ]
+    ]
+  },
+  "erros_finais": [
+    {
+      "linha_origem": 24,
+      "classe_real": 1,
+      "variedade_real": "Kama",
+      "classe_prevista": 3,
+      "variedade_prevista": "Canadian",
+      "folha": 5,
+      "amostras_treino_folha": 48,
+      "proporcoes_classes_folha": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "caminho": [
+        "sulco=4.961 <= 5.5755",
+        "area=12.08 <= 13.435",
+        "area=12.08 <= 12.71",
+        "sulco=4.961 > 4.675"
+      ],
+      "vizinhos_treino": [
+        {
+          "linha": 65,
+          "classe": 1,
+          "distancia_padronizada_7_atributos": 0.7262462401551892
+        },
+        {
+          "linha": 166,
+          "classe": 3,
+          "distancia_padronizada_7_atributos": 0.7739323751770466
+        },
+        {
+          "linha": 31,
+          "classe": 1,
+          "distancia_padronizada_7_atributos": 1.087710205408471
+        }
+      ]
+    },
+    {
+      "linha_origem": 62,
+      "classe_real": 1,
+      "variedade_real": "Kama",
+      "classe_prevista": 3,
+      "variedade_prevista": "Canadian",
+      "folha": 5,
+      "amostras_treino_folha": 48,
+      "proporcoes_classes_folha": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "caminho": [
+        "sulco=4.703 <= 5.5755",
+        "area=11.23 <= 13.435",
+        "area=11.23 <= 12.71",
+        "sulco=4.703 > 4.675"
+      ],
+      "vizinhos_treino": [
+        {
+          "linha": 166,
+          "classe": 3,
+          "distancia_padronizada_7_atributos": 1.0238831500983443
+        },
+        {
+          "linha": 63,
+          "classe": 1,
+          "distancia_padronizada_7_atributos": 1.110614555774716
+        },
+        {
+          "linha": 202,
+          "classe": 3,
+          "distancia_padronizada_7_atributos": 1.170804151395308
+        }
+      ]
+    },
+    {
+      "linha_origem": 38,
+      "classe_real": 1,
+      "variedade_real": "Kama",
+      "classe_prevista": 2,
+      "variedade_prevista": "Rosa",
+      "folha": 13,
+      "amostras_treino_folha": 1,
+      "proporcoes_classes_folha": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "caminho": [
+        "sulco=5.484 <= 5.5755",
+        "area=17.08 > 13.435",
+        "largura=3.683 > 3.572"
+      ],
+      "vizinhos_treino": [
+        {
+          "linha": 36,
+          "classe": 1,
+          "distancia_padronizada_7_atributos": 0.9339185193222889
+        },
+        {
+          "linha": 80,
+          "classe": 2,
+          "distancia_padronizada_7_atributos": 1.0101313598302115
+        },
+        {
+          "linha": 102,
+          "classe": 2,
+          "distancia_padronizada_7_atributos": 1.1134274618645872
+        }
+      ]
+    }
+  ],
+  "ic95_wilson_acuracia": [
+    0.8099057319884169,
+    0.9754095901266941
+  ],
+  "auc_macro_ovr": 0.9226190476190476,
+  "ganho_acuracia_pontos_percentuais": 59.52380952380953
+}

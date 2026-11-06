@@ -49,6 +49,8 @@ Cada linha representa um grão de trigo. A variável alvo identifica sua varieda
 
 **Cuidado metodológico:** embora a divisão dos dados seja apresentada na entrega de 20/11, ela será feita antes de qualquer seleção de atributos que utilize os rótulos das classes. O conjunto de teste ficará reservado para a avaliação final.
 
+**Tecnologia prevista para executar o plano:** Python com a biblioteca `pandas` para leitura, preparação e análise dos dados; `scikit-learn` para a divisão dos dados, o treinamento da árvore de decisão e a avaliação das previsões. Assim, `pandas` participa da preparação dos dados de treino, enquanto o treinamento do modelo é feito pelo classificador do `scikit-learn`.
+
 ## Fonte e referência
 
 Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., & Lukasik, S. (2010). *Seeds* [Dataset]. UCI Machine Learning Repository. <https://doi.org/10.24432/C5H30K>

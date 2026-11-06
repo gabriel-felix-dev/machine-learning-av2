@@ -1,0 +1,8 @@
+atributo,F_ANOVA,p_valor_exploratorio,candidato_k3
+area,466.6504546,1.210360084e-68,True
+perimetro,464.7807954,1.60364614e-68,True
+largura,347.0749464,7.616191078e-60,True
+sulco,302.3025848,6.68832484e-56,False
+comprimento,275.4930203,2.587018906e-53,False
+compacidade,57.79334507,9.481836152e-20,False
+assimetria,45.73156639,1.577130388e-16,False

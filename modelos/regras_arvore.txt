@@ -1,0 +1,22 @@
+|--- sulco <= 5.58
+|   |--- area <= 13.43
+|   |   |--- area <= 12.71
+|   |   |   |--- sulco <= 4.67
+|   |   |   |   |--- class: 1
+|   |   |   |--- sulco >  4.67
+|   |   |   |   |--- class: 3
+|   |   |--- area >  12.71
+|   |   |   |--- assimetria <= 4.41
+|   |   |   |   |--- comprimento <= 5.11
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- comprimento >  5.11
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- assimetria >  4.41
+|   |   |   |   |--- class: 3
+|   |--- area >  13.43
+|   |   |--- largura <= 3.57
+|   |   |   |--- class: 1
+|   |   |--- largura >  3.57
+|   |   |   |--- class: 2
+|--- sulco >  5.58
+|   |--- class: 2

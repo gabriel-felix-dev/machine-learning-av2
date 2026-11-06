@@ -1,0 +1,112 @@
+[
+  {
+    "linha_origem": 24,
+    "classe_real": 1,
+    "variedade_real": "Kama",
+    "classe_prevista": 3,
+    "variedade_prevista": "Canadian",
+    "folha": 5,
+    "amostras_treino_folha": 48,
+    "proporcoes_classes_folha": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "caminho": [
+      "sulco=4.961 <= 5.5755",
+      "area=12.08 <= 13.435",
+      "area=12.08 <= 12.71",
+      "sulco=4.961 > 4.675"
+    ],
+    "vizinhos_treino": [
+      {
+        "linha": 65,
+        "classe": 1,
+        "distancia_padronizada_7_atributos": 0.7262462401551892
+      },
+      {
+        "linha": 166,
+        "classe": 3,
+        "distancia_padronizada_7_atributos": 0.7739323751770466
+      },
+      {
+        "linha": 31,
+        "classe": 1,
+        "distancia_padronizada_7_atributos": 1.087710205408471
+      }
+    ]
+  },
+  {
+    "linha_origem": 62,
+    "classe_real": 1,
+    "variedade_real": "Kama",
+    "classe_prevista": 3,
+    "variedade_prevista": "Canadian",
+    "folha": 5,
+    "amostras_treino_folha": 48,
+    "proporcoes_classes_folha": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "caminho": [
+      "sulco=4.703 <= 5.5755",
+      "area=11.23 <= 13.435",
+      "area=11.23 <= 12.71",
+      "sulco=4.703 > 4.675"
+    ],
+    "vizinhos_treino": [
+      {
+        "linha": 166,
+        "classe": 3,
+        "distancia_padronizada_7_atributos": 1.0238831500983443
+      },
+      {
+        "linha": 63,
+        "classe": 1,
+        "distancia_padronizada_7_atributos": 1.110614555774716
+      },
+      {
+        "linha": 202,
+        "classe": 3,
+        "distancia_padronizada_7_atributos": 1.170804151395308
+      }
+    ]
+  },
+  {
+    "linha_origem": 38,
+    "classe_real": 1,
+    "variedade_real": "Kama",
+    "classe_prevista": 2,
+    "variedade_prevista": "Rosa",
+    "folha": 13,
+    "amostras_treino_folha": 1,
+    "proporcoes_classes_folha": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "caminho": [
+      "sulco=5.484 <= 5.5755",
+      "area=17.08 > 13.435",
+      "largura=3.683 > 3.572"
+    ],
+    "vizinhos_treino": [
+      {
+        "linha": 36,
+        "classe": 1,
+        "distancia_padronizada_7_atributos": 0.9339185193222889
+      },
+      {
+        "linha": 80,
+        "classe": 2,
+        "distancia_padronizada_7_atributos": 1.0101313598302115
+      },
+      {
+        "linha": 102,
+        "classe": 2,
+        "distancia_padronizada_7_atributos": 1.1134274618645872
+      }
+    ]
+  }
+]
