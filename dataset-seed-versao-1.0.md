@@ -1,16 +1,20 @@
-# Projeto AV2 — Entrega de 06/11/2026
+# Projeto AV2 — Versão 1.0
 
 ## Identificação
 
-**Tema:** classificação de variedades de trigo por características geométricas dos grãos  
+**Tema:** Classificação de variedades de trigo por características geométricas dos grãos  
 **Dataset:** Seeds  
-**Integrante(s):** Gabriel Felix Pinto - 03356520, David Ryan - 03354657
+**Integrantes:** Gabriel Felix - 03356520, David Ryan - 03354657
+
+**Notebook Google Colab:** [machine-learning-av2](https://colab.research.google.com/drive/1EtJP2y7Bdx2z3ypzzkebarNsdtpvi_3e?usp=sharing)
+
+**Repositório Github:** [machine-learning-av2](https://github.com/gabriel-felix-dev/machine-learning-av2.git)
 
 ## T1 — Escolha e coleta do dataset
 
 O dataset escolhido é o **Seeds**, disponibilizado pelo [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/236/seeds). Ele reúne medidas geométricas de **210 grãos de trigo**, pertencentes a três variedades: **Kama, Rosa e Canadian**, com **70 amostras de cada variedade**. As medidas já foram extraídas pelos responsáveis pela pesquisa; este projeto usará a tabela numérica, sem processamento de imagens.
 
-O [arquivo original](https://archive.ics.uci.edu/ml/machine-learning-databases/00236/seeds_dataset.txt) foi coletado em 06/11/2026 e está salvo em [`dados/seeds_dataset.txt`](dados/seeds_dataset.txt). A conferência inicial confirmou **210 linhas**, **oito valores por linha** (sete atributos e uma classe), todos numéricos, com **70 registros em cada uma das classes 1, 2 e 3**. A ficha da UCI informa que o conjunto não possui valores ausentes. A verificação detalhada de consistência e possíveis duplicatas fará parte da próxima entrega.
+O [arquivo original](https://archive.ics.uci.edu/ml/machine-learning-databases/00236/seeds_dataset.txt) foi coletado em 06/11/2026 e está salvo em [`dados/dataset-seeds.txt`](dados/dataset-seeds.txt). Para facilitar a leitura e a análise, os mesmos dados também estão disponíveis em [`dados/dataset-seeds.csv`](dados/dataset-seeds.csv), com cabeçalho, colunas separadas por ponto e vírgula (`;`) e ponto (`.`) como separador decimal. A conferência inicial confirmou **210 registros**, **oito valores por registro** (sete atributos e uma classe), todos numéricos, com **70 registros em cada uma das classes 1, 2 e 3**. O CSV possui ainda uma linha de cabeçalho. A ficha da UCI informa que o conjunto não possui valores ausentes. A verificação detalhada de consistência e possíveis duplicatas fará parte da próxima entrega.
 
 | Posição | Variável | Papel |
 | --- | --- | --- |
@@ -46,8 +50,6 @@ Cada linha representa um grão de trigo. A variável alvo identifica sua varieda
 | Divisão dos dados e modelagem | Separar treino e teste preservando as três classes; escolher e treinar um classificador inicial, como uma árvore de decisão. | 20/11 (envio no feriado) |
 | Refinamento e análise de erros | Ajustar o modelo e analisar a matriz de confusão e os exemplos classificados incorretamente. | 27/11 |
 | Comunicação dos resultados | Apresentar método, resultados, limitações e resposta à pergunta inicial. | 04/12 |
-
-**Cuidado metodológico:** embora a divisão dos dados seja apresentada na entrega de 20/11, ela será feita antes de qualquer seleção de atributos que utilize os rótulos das classes. O conjunto de teste ficará reservado para a avaliação final.
 
 ## Fonte e referência
 
