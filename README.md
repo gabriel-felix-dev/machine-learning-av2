@@ -34,3 +34,7 @@ O script `src/entrega_27_11.py` separa o refino (`refinar`) da avaliação (`ava
 ```powershell
 .\.venv\Scripts\python.exe src\entrega_27_11.py verificar
 ```
+
+## Apresentação final de 04/12
+
+A apresentação editável de oito slides está em [apresentacao/apresentacao_final.pptx](apresentacao/apresentacao_final.pptx). O [roteiro de fala](apresentacao/roteiro_04-12.md) distribui o conteúdo em **6 minutos e 35 segundos**, com margem até o limite de 7 minutos. Os slides resumem o dataset, a divisão, a escolha e o refino do modelo, o resultado no teste, os erros e as limitações. O código de geração está em `src/gerar_apresentacao.mjs`.
