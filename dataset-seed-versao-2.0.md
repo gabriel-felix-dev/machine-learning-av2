@@ -47,9 +47,9 @@ Cada linha representa um grão de trigo. A variável alvo identifica sua varieda
 | Limpeza e pré-processamento | Conferir leitura, tipos, valores ausentes, duplicatas e consistência dos registros; separar treino e teste. | 13/11 | Concluída |
 | Análise exploratória (EDA) | Comparar distribuições das medidas entre as três classes e examinar relações entre atributos. | 13/11 | Concluída no treino |
 | Seleção de atributos | Investigar quais medidas contribuem mais e comparar o uso de todos os atributos com um subconjunto. | 13/11 | Concluída no treino |
-| Modelagem e avaliação inicial | Treinar um classificador inicial e avaliar uma única vez no teste reservado. | 20/11 (envio no feriado) | Pendente |
-| Refinamento e análise de erros | Ajustar o modelo e analisar a matriz de confusão e os exemplos classificados incorretamente. | 27/11 | Pendente |
-| Comunicação dos resultados | Apresentar método, resultados, limitações e resposta à pergunta inicial. | 04/12 | Pendente |
+| Divisão, seleção e treinamento | Documentar a divisão dos dados já preparada em 13/11, selecionar o modelo com os dados de treino e treiná-lo. | 20/11 (feriado; envio indicado no cronograma) | Pendente |
+| Refino do modelo e análise do erro | Ajustar o modelo, avaliá-lo e examinar a matriz de confusão e os exemplos classificados incorretamente. | 27/11 | Pendente |
+| Apresentação final | Apresentar método, resultados, limitações e resposta à pergunta inicial. | 04/12 | Pendente |
 
 ## T4 — Limpeza e pré-processamento (13/11)
 
@@ -67,7 +67,7 @@ No treino, **Rosa** apresentou as maiores médias de área, perímetro, comprime
 
 O teste F da ANOVA foi aplicado somente ao treino para ordenar os atributos. A comparação de subconjuntos de **1 a 7 atributos** usou regressão logística como referência exploratória e validação cruzada estratificada de cinco dobras; em cada dobra, a seleção e a padronização foram refeitas no pipeline. O notebook inclui o gráfico do ranking ANOVA e o gráfico da acurácia média por quantidade de atributos, com o desvio entre dobras.
 
-A maior acurácia média exploratória foi **0,946** com cinco ou seis atributos. Pela regra de 1 erro padrão, o subconjunto mais simples dentro do limite foi o de **quatro atributos: área, perímetro, largura do grão e comprimento do sulco**. Ele obteve média **0,929**, igual à média com os sete atributos. Esses resultados orientam a seleção e **não representam desempenho final**: a escolha de `k` pode tornar a estimativa otimista, e a avaliação no teste reservado será feita na próxima entrega.
+A maior acurácia média exploratória foi **0,946** com cinco ou seis atributos. Pela regra de 1 erro padrão, o subconjunto mais simples dentro do limite foi o de **quatro atributos: área, perímetro, largura do grão e comprimento do sulco**. Ele obteve média **0,929**, igual à média com os sete atributos. Esses resultados orientam a seleção e **não representam desempenho final**: a escolha de `k` pode tornar a estimativa otimista, e a avaliação no teste reservado está planejada para a entrega de 27/11.
 
 ## Fonte e referência
 
