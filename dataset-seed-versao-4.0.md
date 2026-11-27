@@ -6,7 +6,7 @@
 **Dataset:** Seeds  
 **Integrantes:** Gabriel Felix - 03356520, David Ryan - 03354657
 
-**Notebook Google Colab:** [machine-learning-av2](https://colab.research.google.com/drive/1EtJP2y7Bdx2z3ypzzkebarNsdtpvi_3e?usp=sharing)
+**Notebook Google Colab:** [machine-learning-av2](https://colab.research.google.com/drive/1v99CegI98H1rKM7ebXNOeET_g8grm7Er?usp=sharing)
 
 **Repositório Github:** [machine-learning-av2](https://github.com/gabriel-felix-dev/machine-learning-av2.git)
 
