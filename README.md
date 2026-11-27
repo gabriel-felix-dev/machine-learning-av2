@@ -1,6 +1,6 @@
 # AV2 — Classificação de variedades de trigo
 
-Entrega de **13/11/2026**: limpeza e pré-processamento, análise exploratória (EDA) e seleção de atributos do dataset Seeds. O planejamento e a descrição do conjunto estão em [dataset-seed-versao-2.0.md](dataset-seed-versao-2.0.md).
+O notebook reúne as entregas de **13/11/2026** (limpeza, EDA e seleção de atributos) e **20/11/2026** (divisão documentada, escolha e treinamento do modelo). O planejamento e a descrição do conjunto estão em [dataset-seed-versao-2.0.md](dataset-seed-versao-2.0.md).
 
 ## Executar no Google Colab
 
@@ -8,7 +8,7 @@ Entrega de **13/11/2026**: limpeza e pré-processamento, análise exploratória 
 2. Envie `dados/dataset-seeds.txt` junto ao notebook, preservando a pasta `dados/`. Também é possível enviar `dataset-seeds.txt` ou `dataset-seeds.csv` diretamente para `/content/`.
 3. Execute as células de cima para baixo. As bibliotecas usadas são `pandas`, `numpy`, `matplotlib`, `seaborn` e `scikit-learn`, disponíveis no Colab.
 
-O notebook contém tabelas e gráficos de distribuição das classes, medidas por variedade, correlações, relação entre área e comprimento do sulco, ranking ANOVA e acurácia exploratória por número de atributos.
+O notebook contém tabelas e gráficos de distribuição das classes, medidas por variedade, correlações, ranking ANOVA e seleção de atributos. Na seção 8, compara cinco candidatos por validação cruzada, explica a escolha e treina o pipeline final. O arquivo do modelo é salvo em `modelos/` no ambiente em que o notebook for executado. No Colab, baixe esse arquivo se quiser conservá-lo após a sessão.
 
 ## Resultado da entrega
 
